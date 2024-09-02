@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Rock Paper Scissors</title>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <img src="logo.svg" alt="logo">
+            <div class="score">
+                <div class="score_title">Score</div>
+                <div class="score_number">0</div>
+            </div>
+        </header>
+        <section class="game">
+            <button class="choice-btn" data-choice="paper">
+                <div class="choice paper">
+                    <img src="icon-paper.svg" alt="paper">
+                </div>
+            </button>
+            <button class="choice-btn" data-choice="scissor">
+                <div class="choice scissor">
+                    <img src="icon-scissor.svg" alt="scissor">
+                </div>
+            </button>
+            <button class="choice-btn" data-choice="rock">
+                <div class="choice rock">
+                    <img src="icon-rock.svg" alt="paper">   
+                </div>
+            </button>
+        </section>
+    </div>
+    <section class="results hidden">
+        <h2 class="results_heading">You Picked</h2>
+        <h2 class="results_heading">The House Picked</h2>
+        <div class="results_result"></div>
+        <div class="results_winner hidden">
+            <h3 class="results_text"></h3>
+            <button class="play_again">Play again</button>
+        </div>
+        <div class="results_result"></div> 
+    </section>
+    <button class="rules_btn">Rules</button>
+    <div class="modal">
+        <div class="modal_container">
+            <header class="modal_header">
+                <h2>Rules</h2>
+                <button class="close_btn"><img src="icon-close.svg" alt="close button"></button>
+            </header>
+            <img src="image-rules.svg" alt="rules image">
+        </div>
+    </div>
+
+
+
+    <script src="app.js"></script>
+</body>
+</html>
